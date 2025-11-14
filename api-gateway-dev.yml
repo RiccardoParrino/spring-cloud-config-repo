@@ -3,10 +3,12 @@ message: "api-gateway-dev config file"
 spring:
     cloud:
         gateway:
-            discovery:
-                locator:
-                    enabled: true
-                    lower-case-service-id: true
+            server:
+                webflux:
+                    discovery:
+                        locator:
+                            enabled: true
+                            lower-case-service-id: true
             # server:
             #     webflux:
             #         routes:
